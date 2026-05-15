@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Hub Général">
+<meta name="theme-color" content="#1e3a5f">
+<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiSHViIEfDqW7DqXJhbCIsInNob3J0X25hbWUiOiJIdWIgR8OpbsOpcmFsIiwic3RhcnRfdXJsIjoiLi8iLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSIsImJhY2tncm91bmRfY29sb3IiOiIjZjRmNmY5IiwidGhlbWVfY29sb3IiOiIjMWUzYTVmIiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbCw8c3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDEwMCAxMDAnPjxyZWN0IHdpZHRoPScxMDAnIGhlaWdodD0nMTAwJyByeD0nMjAnIGZpbGw9JyMxZTNhNWYnLz48dGV4dCB4PSc1MCcgeT0nNjgnIGZvbnQtc2l6ZT0nNDAnIHRleHQtYW5jaG9yPSdtaWRkbGUnPvCfk5o8L3RleHQ+PC9zdmc+IiwidHlwZSI6ImltYWdlL3N2Zyt4bWwiLCJzaXplcyI6ImFueSJ9XX0=">
+<title>Hub Général</title>
+<style>
+:root{--pri:#1e3a5f;--pri2:#2563eb;--acc:#f97316;--bg:#f8fafc;--card:#fff;--text:#1a1a2e;--muted:#6b7280;--border:#e5e7eb;--green:#059669;--shadow-sm:0 1px 3px rgba(0,0,0,.06);--shadow:0 4px 12px rgba(0,0,0,.08);--shadow-lg:0 12px 32px rgba(0,0,0,.12);--ease:cubic-bezier(.23,1,.32,1)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.6}
+header{background:linear-gradient(135deg,var(--pri) 0%,var(--pri2) 100%);color:white;padding:env(safe-area-inset-top,0px) 0 0;position:relative;overflow:hidden}
+header::after{content:'';position:absolute;bottom:-40px;left:-20px;right:-20px;height:80px;background:var(--bg);border-radius:50% 50% 0 0}
+.header-content{padding:32px 24px 48px;position:relative;z-index:1}
+.header-content h1{font-size:28px;font-weight:800;margin-bottom:4px}
+.header-content p{font-size:15px;opacity:.85}
+main{max-width:600px;margin:0 auto;padding:8px 20px 40px}
+.section-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin:28px 0 14px;padding-left:4px}
+.hub-card{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px 20px;margin-bottom:12px;text-decoration:none;color:var(--text);transition:all .25s var(--ease);box-shadow:var(--shadow-sm)}
+.hub-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--pri2)}
+.hub-card:active{transform:scale(.98)}
+.hub-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;color:white}
+.hub-info{flex:1;min-width:0}
+.hub-info h3{font-size:16px;font-weight:700;margin-bottom:2px}
+.hub-info p{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hub-arrow{color:var(--muted);font-size:18px;flex-shrink:0}
+.footer{text-align:center;padding:20px;font-size:12px;color:var(--muted)}
+@media(prefers-color-scheme:dark){
+:root{--bg:#0f172a;--card:#1e293b;--text:#e2e8f0;--muted:#94a3b8;--border:#334155}
+header{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%)}
+header::after{background:var(--bg)}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-content">
+<h1>Hub Général</h1>
+<p>Tous les hubs de formation</p>
+</div>
+</header>
+<main>
+
+<div class="section-title">Formation technique</div>
+
+<a href="aero.html" class="hub-card">
+<div class="hub-icon" style="background:linear-gradient(135deg,#1e3a5f,#2563eb)">✈</div>
+<div class="hub-info">
+<h3>Hub Aéro & Matériaux</h3>
+<p>BIA, traitements de surface, composites, métalliques</p>
+</div>
+<span class="hub-arrow">›</span>
+</a>
+
+<div class="section-title">Langues</div>
+
+<a href="anglais-vocab.html" class="hub-card">
+<div class="hub-icon" style="background:linear-gradient(135deg,#059669,#0d9488)">🇬🇧</div>
+<div class="hub-info">
+<h3>Hub Anglais</h3>
+<p>Vocabulaire technique et professionnel</p>
+</div>
+<span class="hub-arrow">›</span>
+</a>
+
+<a href="anglais-preply.html" class="hub-card">
+<div class="hub-icon" style="background:linear-gradient(135deg,#0d9488,#06b6d4)">📚</div>
+<div class="hub-info">
+<h3>Anglais Preply</h3>
+<p>Cours et exercices Preply</p>
+</div>
+<span class="hub-arrow">›</span>
+</a>
+
+<a href="entretien.html" class="hub-card">
+<div class="hub-icon" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">🎤</div>
+<div class="hub-info">
+<h3>Hub Entretien</h3>
+<p>Préparation entretiens en anglais</p>
+</div>
+<span class="hub-arrow">›</span>
+</a>
+
+<div class="section-title">Citoyenneté</div>
+
+<a href="naturalisation/index.html" class="hub-card">
+<div class="hub-icon" style="background:linear-gradient(135deg,#dc2626,#2563eb)">🇫🇷</div>
+<div class="hub-info">
+<h3>Hub Naturalisation</h3>
+<p>Préparation examen civique</p>
+</div>
+<span class="hub-arrow">›</span>
+</a>
+
+</main>
+<div class="footer">Hub Général v1</div>
+</body>
+</html>
